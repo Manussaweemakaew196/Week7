@@ -41,6 +41,6 @@ namespace week7
                 set { y = value; }
             }
         }
-    }
+    } 
 
 }
