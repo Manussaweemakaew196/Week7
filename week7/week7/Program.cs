@@ -1,46 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace week7
+﻿class Program
 {
-
-    using System;
-
-    namespace ConsoleApp5
+    static void Main(string[] args)
     {
-        class Program
-        {
-            static void Main(string[] args)
-            {
-                Point myPoint = new Point();  // create new object
-                myPoint.X = 10;
-                myPoint.Y = 10;
-                Console.WriteLine("myPoint.x = {0}", myPoint.X);
-                Console.WriteLine("myPoint.y = {0}", myPoint.Y);
-                Console.ReadLine();
-            }
-        }
-
-        class Point          // class name
-        {
-            private int x;    // fields
-            private int y;
-
-            public int X      // properties
-            {
-                get { return x; }
-                set { x = value; }
-            }
-
-            public int Y
-            {
-                get { return y; }
-                set { y = value; }
-            }
-        }
-    }
-
+        Student su = new Student();
+        su.Name = "Student Name";
+        su.ID = "12345678";
+        su.GPA = 3.5f;
+        Console.WriteLine("Student name : " + su.Name);
+        Console.WriteLine("Student ID   : " + su.ID);
+        Console.WriteLine("Student GPA  : " + su.GPA);
+        Console.ReadLine();
+   }
+}
+class Student
+{
+    public string Name;
+    public string ID;
+    public float GPA;
 }
